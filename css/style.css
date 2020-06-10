@@ -44,67 +44,86 @@ nav {
 }
 .col ul li a:hover {
   color: #191c1f;
+  font-weight: bold;
 }
 
 /* logo */
-.col.logo {
+.logo {
   width: 15%;
 }
-.col.logo img {
+.logo img {
   height: 100%;
 }
 
 /* nav left */
-.col.nav-left {
+.nav-left {
   width: 50%;
 }
-.col.nav-left ul li {
+.nav-left ul li {
   padding-right: 20px;
 }
 
 /* nav right */
-.col.nav-right {
+.nav-right {
   text-align: right;
 }
-.col.nav-right ul li {
+.nav-right ul li {
   padding-left: 20px;
     position: relative;
 }
-.col.nav-right ul li .fa-angle-down {
+.nav-right ul li .fa-angle-down {
+  font-size: 10px;
+  padding-left: 10px;
+}
+.nav-right ul li .fa-angle-up {
   font-size: 10px;
   padding-left: 10px;
 }
 
-.col.nav-right .menu-right .dropdown {
+/* dropdown */
+.nav-right .menu-right .dropdown {
   position: absolute;
   top: 100%;
   left: 70%;
   transform: translateX(-50%);
   text-align: left;
-  box-shadow: 0px 3px 15px 5px rgba(0,0,0,0.20);
+  box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.05);
   display: none;
 }
-.col.nav-right .menu-right .dropdown li {
+.nav-right .menu-right .dropdown li {
   padding: 5px 25px;
 }
-
-.col.nav-right .menu-right .dropdown.active {
-  display: block;
+.nav-right .menu-right .dropdown li.nuovo::after {
+  position: absolute;
+  top: -3px;
+  content: 'Nuovo';
+  font-size: 11px;
+  font-weight: bold;
+  color: blue;
+  padding-left: 2px;
 }
-.col.nav-right .menu-right .dropdown.disactive {
-  display: none;
+
+.nav-right .menu-right .dropdown.active {
+  display: block;
 }
 
 /* download */
-.col.download {
-  width: 25%;
+.download {
+  width: 30%;
   text-align: right;
 }
-.col.download a {
-  background-color: #ff008b;
-  color: white;
+
+.btn a {
   padding: 0px 20px;
   border-radius: 15px;
   font-weight: bold;
   display: inline-block;
+}
+
+.btn.download a {
+  background-color: #ff008b;
+  color: white;
+}
+.btn.download a:hover {
+  background-color: #c10069;
 }
