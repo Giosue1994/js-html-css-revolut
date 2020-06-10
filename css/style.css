@@ -6,13 +6,17 @@
 }
 
 /* ________ REGOLE GENERALI ________ */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
 .col {
-  border: 1px solid blue;
   width: 100%;
   line-height: 30px;
 }
@@ -23,12 +27,12 @@ ul {
 
 a {
   text-decoration: none;
+  color: grey;
 }
 
 /* ________ HEADER ________ */
 /* NAVBAR */
 nav {
-  background-color: lightblue;
   height: 70px;
   padding: 20px 0;
   display: flex;
@@ -37,7 +41,9 @@ nav {
 
 .col ul li {
   display: inline-block;
-
+}
+.col ul li a:hover {
+  color: #191c1f;
 }
 
 /* logo */
@@ -47,6 +53,7 @@ nav {
 .col.logo img {
   height: 100%;
 }
+
 /* menu left */
 .col.menu-left {
   width: 50%;
@@ -69,6 +76,14 @@ nav {
 
 /* download */
 .col.download {
-  width: 30%;
+  width: 25%;
   text-align: right;
+}
+.col.download a {
+  background-color: #ff008b;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
 }
