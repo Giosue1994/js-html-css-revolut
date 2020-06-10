@@ -57,5 +57,18 @@ $(document).ready(
       }
     );
 
+    $('.burger-menu a').click(
+      function() {
+        $('.menu-toggleable').slideDown();
+
+      }
+    );
+
+    $('.close').click(
+      function() {
+        $('.menu-toggleable').slideUp();
+      }
+    );
+
   }
 );
