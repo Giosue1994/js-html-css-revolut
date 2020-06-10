@@ -1,0 +1,74 @@
+/* ________ RESET ________ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ________ REGOLE GENERALI ________ */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col {
+  border: 1px solid blue;
+  width: 100%;
+  line-height: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ________ HEADER ________ */
+/* NAVBAR */
+nav {
+  background-color: lightblue;
+  height: 70px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col ul li {
+  display: inline-block;
+
+}
+
+/* logo */
+.col.logo {
+  width: 15%;
+}
+.col.logo img {
+  height: 100%;
+}
+/* menu left */
+.col.menu-left {
+  width: 50%;
+}
+.col.menu-left ul li {
+  padding-right: 20px;
+}
+
+/* menu right */
+.col.menu-right {
+  text-align: right;
+}
+.col.menu-right ul li {
+  padding-left: 20px;
+}
+.col.menu-right ul li .fa-angle-down {
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+/* download */
+.col.download {
+  width: 30%;
+  text-align: right;
+}
