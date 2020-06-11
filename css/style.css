@@ -80,10 +80,7 @@ nav {
   margin-left: 20px;
     position: relative;
 }
-.nav-right ul li .fa-angle-down {
-  font-size: 10px;
-  padding-left: 10px;
-}
+.nav-right ul li .fa-angle-down,
 .nav-right ul li .fa-angle-up {
   font-size: 10px;
   padding-left: 10px;
@@ -141,7 +138,7 @@ nav {
 }
 
 /*  Burger Menu*/
-.burger-menu i {
+.burger-menu a {
   font-size: 30px;
   color: #008ed1;
 }
@@ -161,6 +158,55 @@ nav {
 .menu-toggleable .menu li {
   line-height: 2;
 }
+.menu-toggleable .menu li .fa-angle-down,
+.menu-toggleable .menu li .fa-angle-up {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #008ed1;
+}
+
+.menu-toggleable .active {
+  color: #191c1f;
+}
+
+/* dropdown-bm */
+.menu-toggleable .menu .dropdown-bm {
+  position: absolute;
+  top: 55%;
+  left:0;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.05);
+  font-size: 20px;
+  white-space: nowrap;
+  width: 100%;
+  display: none;
+}
+.menu-toggleable .menu .dropdown-bm.active {
+  display: block;
+}
+
+.menu-toggleable .menu .dropdown-bm li {
+  padding: 5px 25px;
+  display: block;
+}
+.menu-toggleable .menu .dropdown-bm li.nuovo::after {
+  position: relative;
+  top: -10px;
+  left: 2px;
+  content: 'Nuovo';
+  font-size: 11px;
+  font-weight: bold;
+  color: blue;
+}
+.menu-toggleable .menu .dropdown-bm .close-bm {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu-toggleable .close-bm a {
+  color: #008ed1;
+}
 
 .menu-toggleable .close {
   position: absolute;
@@ -168,8 +214,17 @@ nav {
   right: 20px;
 }
 
+.menu-toggleable .close a {
+  color: #008ed1;
+}
+
+
 
 @media screen and (max-width: 1080px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
    .nav-left,
    .nav-right,
    .download {

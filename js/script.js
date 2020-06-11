@@ -48,6 +48,12 @@ $(document).ready(
       }
     );
 
+    $('.with-dropdown-bm').click(
+      function() {
+        $(this).children('.dropdown-bm').slideToggle('active');
+      }
+    );
+
     // quando clicco su un elemento della lista che ha
     // id 'lang' rimuovo la classe 'fa-angle-up' e aggiungo
     // la classe 'fa-angle-down'
@@ -63,9 +69,18 @@ $(document).ready(
     $('.burger-menu a').click(
       function() {
         $('.menu-toggleable').slideDown();
-
       }
     );
+
+    // quando clicco su un link del burger menu il testo cambia colore
+    // aggiungendo la classe 'active'
+    $('.menu a').click(
+      function() {
+        $(this).toggleClass('active');
+      }
+    );
+
+
 
     // quando clicco sull'icone della x scompare la finestra
     $('.close').click(
