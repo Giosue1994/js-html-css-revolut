@@ -40,10 +40,11 @@ $(document).ready(
     );
 
     // quando clicco su un elemento della lista che ha classe
-    // 'dropdown' la classe 'active' viene rimossa e il menu viene nascosto
+    // 'dropdown' la classe 'active' viene rimossa o aggiunta a seconda
+    // se la dropdown è visibile o meno
     $('.with-dropdown').click(
       function() {
-        $(this).children('.dropdown').removeClass('active');
+        $(this).children('.dropdown').toggleClass('active');
       }
     );
 
@@ -57,6 +58,8 @@ $(document).ready(
       }
     );
 
+
+    // quando clicco sull'icone del burger menu compare la finestra
     $('.burger-menu a').click(
       function() {
         $('.menu-toggleable').slideDown();
@@ -64,6 +67,7 @@ $(document).ready(
       }
     );
 
+    // quando clicco sull'icone della x scompare la finestra
     $('.close').click(
       function() {
         $('.menu-toggleable').slideUp();
