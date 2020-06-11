@@ -48,6 +48,7 @@ $(document).ready(
       }
     );
 
+
     $('.with-dropdown-bm').click(
       function() {
         $(this).children('.dropdown-bm').slideToggle('active');
@@ -59,7 +60,14 @@ $(document).ready(
     // la classe 'fa-angle-down'
     $('#lang').click(
       function() {
-        $('i').removeClass('fa-angle-up');
+        $('i').toggleClass('fa-angle-up');
+        $('i').addClass('fa-angle-down');
+      }
+    );
+
+    $('.lang-bm').click(
+      function() {
+        $('i').toggleClass('fa-angle-up');
         $('i').addClass('fa-angle-down');
       }
     );
